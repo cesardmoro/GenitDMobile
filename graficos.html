@@ -15,7 +15,8 @@
 <script type="text/javascript" src="lib/amcharts/js/dark.js"></script>
 	
 <script type="text/javascript">
-$(document).ready(function(){
+$(document).on('pageinit', function() {
+
 			AmCharts.makeChart("chartdiv",
 				{
 					"type": "pie",
@@ -151,7 +152,7 @@ AmCharts.makeChart("chartdiv2",
 				}
 			);
 			
-			});
+});
 		</script>
 <title></title> 
 </head>
