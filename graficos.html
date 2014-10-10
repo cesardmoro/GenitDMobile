@@ -7,44 +7,27 @@
 <link rel="stylesheet" href="lib/jquery-mobile/css/jquery.mobile.custom.theme.min.css" />
 <script src="lib/jquery/jquery-1.11.1.min.js"></script>
 <script src="lib/jquery-mobile/js/jquery.mobile.custom.min.js"></script>
+
+
+
 <title></title> 
 </head>
 <body>
-<!-- End Homepage -->
-<section id="graf1" data-role="page" data-theme="a">
+<!-- Begin Homepage -->
+<section id="homePage" data-role="page" data-theme="a">
 	<header data-role="header" data-position="fixed">
-		<a href="#" data-rel="back">go back</a><h1>GenDashboard</h1>
+		<a href="#" data-rel="back" data-icon="back">Back</a> 
+		<h1>GenDashboard</h1>
 	</header>
 	<div class="content" data-role="content">
-		<div id="chartdiv" style="width: 400px; height: 200px; background-color: #282828;" ></div>
-		
-	</div>
 
-<div data-role="footer" data-id="foo1" data-position="fixed">
-	<div data-role="navbar">
-		<ul>
-			<li><a href="#graf1" class="ui-btn-active ui-state-persist">Info</a></li>
-			<li><a href="#graf2">Friends</a></li>
-		</ul>
-	</div><!-- /navbar -->
-</div><!-- /footer -->
-</section>
-<section id="graf2" data-role="page" data-theme="a">
-	<header data-role="header" data-position="fixed">
-		<a href="#" data-rel="back">go back</a><h1>GenDashboard</h1>
-	</header>
-	<div class="content" data-role="content">
-		<div id="chartdiv2" style="width: 400px; height: 200px; background-color: #282828;" ></div>
-		
+    <div id="content"></div>
+
+
 	</div>
-<div data-role="footer" data-id="foo1" data-position="fixed">
-	<div data-role="navbar">
-		<ul>
-			<li><a href="#graf1">Info</a></li>
-			<li><a href="#graf2" class="ui-btn-active ui-state-persist">Friends</a></li>
-		</ul>
-	</div><!-- /navbar -->
-</div><!-- /footer -->
+	<footer data-role="footer" data-position="fixed">
+		<h1>www.gen-it.com.ar</h1>
+	</footer>
 </section>
 
 </body>
