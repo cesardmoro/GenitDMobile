@@ -7,158 +7,13 @@
 <link rel="stylesheet" href="lib/jquery-mobile/css/jquery.mobile.custom.theme.min.css" />
 <script src="lib/jquery/jquery-1.11.1.min.js"></script>
 <script src="lib/jquery-mobile/js/jquery.mobile.custom.min.js"></script>
-<script type="text/javascript" src="lib/amcharts/js/amcharts.js"></script>
-<script type="text/javascript" src="lib/amcharts/js/pie.js"></script>
-<script type="text/javascript" src="lib/amcharts/js/chalk.js"></script>
-<script type="text/javascript" src="lib/amcharts/js/serial.js"></script>
-<script type="text/javascript" src="lib/amcharts/js/dark.js"></script>
-	
-<script type="text/javascript">
-$(document).ready(function(){
-			AmCharts.makeChart("chartdiv",
-				{
-					"type": "pie",
-					"angle": 11.7,
-					"balloonText": "[[title]]<br><span style='font-size:14px'><b>[[value]]</b> ([[percents]]%)</span>",
-					"depth3D": 5,
-					"innerRadius": 15,
-					"labelRadius": 21,
-					"brightnessStep": -127.5,
-					"colors": [
-						"#FF0F00",
-						"#FF6600",
-						"#FF9E01",
-						"#FCD202",
-						"#F8FF01",
-						"#B0DE09",
-						"#04D215",
-						"#0D8ECF",
-						"#0D52D1",
-						"#2A0CD0",
-						"#8A0CCF",
-						"#CD0D74",
-						"#754DEB",
-						"#DDDDDD",
-						"#999999",
-						"#333333",
-						"#000000",
-						"#57032A",
-						"#CA9726",
-						"#990000",
-						"#4B0C25"
-					],
-					"titleField": "category",
-					"valueField": "column-1",
-					"fontSize": 9,
-					"theme": "chalk",
-					"allLabels": [],
-					"balloon": {},
-					"legend": {
-						"align": "center",
-						"markerType": "circle"
-					},
-					"titles": [],
-					"dataProvider": [
-						{
-							"category": "Android",
-							"column-1": "250000"
-						},
-						{
-							"category": "Ios",
-							"column-1": "96000"
-						},
-						{
-							"category": "BlackBerry",
-							"column-1": "15000"
-						}
-					]
-				}
-			);
-AmCharts.makeChart("chartdiv2",
-				{
-					"type": "serial",
-					"categoryField": "category",
-					"angle": 30,
-					"depth3D": 30,
-					"startDuration": 1,
-					"theme": "dark",
-					"categoryAxis": {
-						"gridPosition": "start"
-					},
-					"trendLines": [],
-					"graphs": [
-						{
-							"balloonText": "[[title]] of [[category]]:[[value]]",
-							"fillAlphas": 1,
-							"id": "AmGraph-1",
-							"title": "graph 1",
-							"type": "column",
-							"valueField": "terminals"
-						},
-						{
-							"balloonText": "[[title]] of [[category]]:[[value]]",
-							"fillAlphas": 1,
-							"id": "AmGraph-2",
-							"title": "graph 2",
-							"type": "column",
-							"valueField": "new"
-						}
-					],
-					"guides": [],
-					"valueAxes": [
-						{
-							"id": "ValueAxis-1",
-							"stackType": "3d",
-							"title": "Axis title"
-						}
-					],
-					"allLabels": [],
-					"balloon": {},
-					"legend": {
-						"useGraphSettings": true
-					},
-					"titles": [
-						{
-							"id": "Title-1",
-							"size": 15,
-							"text": "Chart Title"
-						}
-					],
-					"dataProvider": [
-						{
-							"category": "android",
-							"terminals": 1,
-							"new": 3,
-							"column-1": "4",
-							"column-2": "2"
-						},
-						{
-							"category": "blackberry",
-							"terminals": 6,
-							"new": 7,
-							"column-1": "4",
-							"column-2": "5"
-						},
-						{
-							"category": "ios",
-							"terminals": 2,
-							"new": 3,
-							"column-1": "3",
-							"column-2": "2"
-						}
-					]
-				}
-			);
-			
-			});
-		</script>
 <title></title> 
 </head>
 <body>
 <!-- End Homepage -->
 <section id="graf1" data-role="page" data-theme="a">
 	<header data-role="header" data-position="fixed">
-		<a href="#" data-rel="back">go back</a><h1>jQuery Mobile Application</h1>
+		<a href="#" data-rel="back">go back</a><h1>GenDashboard</h1>
 	</header>
 	<div class="content" data-role="content">
 		<div id="chartdiv" style="width: 400px; height: 200px; background-color: #282828;" ></div>
@@ -176,7 +31,7 @@ AmCharts.makeChart("chartdiv2",
 </section>
 <section id="graf2" data-role="page" data-theme="a">
 	<header data-role="header" data-position="fixed">
-		<a href="#" data-rel="back">go back</a><h1>jQuery Mobile Application</h1>
+		<a href="#" data-rel="back">go back</a><h1>GenDashboard</h1>
 	</header>
 	<div class="content" data-role="content">
 		<div id="chartdiv2" style="width: 400px; height: 200px; background-color: #282828;" ></div>
